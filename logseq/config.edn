@@ -13,7 +13,7 @@
 
  ;; The app will ignore those directories or files.
  ;; E.g. :hidden ["/archived" "/test.md" "../assets/archived"]
- :hidden []
+ :hidden ["README.md"]
 
  ;; When creating the new journal page, the app will use your template if there is one.
  ;; You only need to input your template name here.
@@ -107,6 +107,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Setup page "home" as home page with multiple pages in sidebar
  ;; :default-home {:page "home" :sidebar ["page a" "page b"]}
+:default-home {:page "Contents"}
 
  ;; Tell logseq to use a specific folder in the repo as a default location for notes
  ;; if not specified, notes are stored in `pages` directory
@@ -255,7 +256,7 @@
 
  ;; hide specific properties for blocks
  ;; E.g. :block-hidden-properties #{:created-at :updated-at}
- ;; :block-hidden-properties #{}
+ :block-hidden-properties #{:public}
 
  ;; Enable all your properties to have corresponding pages
  :property-pages/enabled? true
@@ -345,6 +346,8 @@
  :feature/enable-flashcards? false
  :publishing/all-pages-public? false
  :ui/show-brackets? true
+ :feature/enable-whiteboards? true
+ :feature/enable-journals? false
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"
