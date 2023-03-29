@@ -107,6 +107,7 @@
  ;; :default-home {:page "Jun 3rd, 2021"}
  ;; 3. Setup page "home" as home page with multiple pages in sidebar
  ;; :default-home {:page "home" :sidebar ["page a" "page b"]}
+:default-home {:page "Contents"}
 
  ;; Tell logseq to use a specific folder in the repo as a default location for notes
  ;; if not specified, notes are stored in `pages` directory
@@ -343,9 +344,9 @@
  ;;     ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :feature/enable-flashcards? false
- :publishing/all-pages-public? false
  :ui/show-brackets? true
  :feature/enable-whiteboards? true
+ :feature/enable-journals? false
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"

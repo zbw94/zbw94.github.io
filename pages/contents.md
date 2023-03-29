@@ -1,3 +1,2 @@
 - Hello World.
-  public:: true
 -
